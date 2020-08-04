@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/tblLayout1"
+    android:stretchColumns="*"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    tools:context=".MainActivity"
+    android:background="#000000">
+    <!--
+    stretchColumns giup ta scale cac item trong row
+    neu la number se duoc tinh la cac index cua row
+    neu * duoc tinh la scale deu tat ca cac item cua row
+    -->
+
+    <TableRow>
+        <TextView
+            android:gravity="center"
+            android:textColor="#FFF"
+            android:text="Column1"/>
+        <Button android:text="Column2"/>
+    </TableRow>
+
+    <TableRow>
+        <EditText
+            android:layout_height="35dip"
+            android:background="#FFF"
+            android:hint="input something here"
+            android:layout_span="2"
+            android:id="@+id/editText"
+            android:inputType="text"
+            />
+    </TableRow>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_marginTop="20px"
+        android:layout_marginBottom="15px"
+        android:layout_height="4dp"
+        android:background="#c40000"/>
+
+    <TableRow>
+        <TextView
+            android:textColor="#FFF"
+            android:gravity="center"
+            android:text="Column1" />
+        <Button android:text="Column2"/>
+        <Button android:text="Column3"/>
+    </TableRow>
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="right"
+        >
+        <Button android:text="Column3"/>
+    </TableRow>
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        >
+        <Button
+            android:text="Column2"
+            android:layout_span="1"/>
+    </TableRow>
+
+</TableLayout>
