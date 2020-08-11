@@ -1,0 +1,20 @@
+<resources>
+    <string name="app_name">My Application2</string>
+    <string-array name="presidents_array">
+        <item>
+            VToan
+        </item>
+        <item>
+            MThang
+        </item>
+        <item>
+            NNam
+        </item>
+        <item>
+            MThien
+        </item>
+        <item>
+            XTung
+        </item>
+    </string-array>
+</resources>
