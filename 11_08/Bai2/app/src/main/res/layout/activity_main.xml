@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Dang nhap he thong!"
+        android:background="#49C1A5"
+        android:gravity="center"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/edtTaiKhoan"
+        android:layout_alignParentStart="true"
+        android:text="Tai Khoan" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="111dp"
+        android:text="Mat Khau" />
+
+    <EditText
+        android:id="@+id/edtTaiKhoan"
+        android:layout_width="265dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginEnd="42dp"
+        android:layout_marginTop="35dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:hint="Khong duoc de trong" />
+
+    <EditText
+        android:id="@+id/edtMatKhau"
+        android:layout_width="265dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/textView2"
+        android:layout_alignEnd="@+id/edtTaiKhoan"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:hint="Khong duoc de trong" />
+
+    <CheckBox
+        android:id="@+id/checkBox"
+        android:checked="false"
+        android:layout_width="265dp"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/edtTaiKhoan"
+        android:layout_below="@+id/edtMatKhau"
+        android:text="Luu thong tin" />
+
+    <Button
+        android:id="@+id/btnDangNhap"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignStart="@+id/edtTaiKhoan"
+        android:layout_marginTop="191dp"
+        android:text="Dang nhap" />
+
+    <Button
+        android:id="@+id/btnThoat"
+        android:layout_width="148dp"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/btnDangNhap"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="214dp"
+        android:text="Thoat" />
+
+</RelativeLayout>
