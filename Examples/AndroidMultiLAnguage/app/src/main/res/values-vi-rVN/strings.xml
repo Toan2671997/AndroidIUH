@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Android-MultiLAnguage</string>
+    <string name="name">Tên</string>
+    <string name="password">Mật khẩu</string>
+    <string name="save_password">Lưu mật khẩu</string>
+</resources>
